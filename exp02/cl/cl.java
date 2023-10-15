@@ -1,9 +1,7 @@
 import java.io.*;
 import java.net.*;
 import javax.imageio.ImageIO; 
-import javax.imageio.ImageReader; // add this
-import java.awt.image.BufferedImage; //add this
-
+import java.awt.image.BufferedImage; 
 
 public class cl {
 
