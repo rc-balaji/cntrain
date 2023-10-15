@@ -1,0 +1,42 @@
+
+//cl.java
+import java.io.*; 
+import java.net.*;
+
+public class Server {
+
+  public static void main(String[] args) throws IOException {
+    
+    ServerSocket server = new ServerSocket(4444); 
+    Socket socket = server.accept();
+      
+    PrintWriter out = new PrintWriter(socket.getOutputStream(), true);  
+    out.println("Hello Client! Here is some data from the server...");
+      
+    socket.close();
+    server.close();
+  }
+}
+
+
+//sr.java
+import java.io.*;
+import java.net.*;
+
+public class Client {
+
+  public static void main(String[] args) throws IOException {
+
+    Socket socket = new Socket("localhost", 4444);
+
+    BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
+    String line = input.readLine(); 
+    System.out.println(line);
+        
+    input.close(); 
+    socket.close();
+  }
+}
+
+
