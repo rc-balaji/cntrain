@@ -1,0 +1,2 @@
+
+                                              PANIMALAR ENGINEERING COLLEGE                     DEPARTMENT OF CSEREGNO:211420104019$cbr2 attach-agent $udp2set null0 [new Agent/Null]$ns attach-agent $n7 $null0$ns connect $udp2 $null0$udp0 set fid_ 1$udp1 set fid_ 2$udp2 set fid_ 3$ns color 1 Red$ns color 2 Green$ns color 2 blue$ns at 0.1 "$cbr0 start"$ns at 0.2 "$cbr1 start"$ns at 0.5 "$cbr2 start"$ns at 4.0 "$cbr2 stop"$ns at 4.2 "$cbr1 stop"$ns at 4.5 "$cbr0 stop"$ns at 5.0 "finish"$ns run
